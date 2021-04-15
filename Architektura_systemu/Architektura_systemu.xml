@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Architektura_systemu</name>
+    </assembly>
+    <members>
+        <member name="T:Architektura_systemu.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Architektura_systemu.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Architektura_systemu.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="F:Architektura_systemu.MainWindow.My_stack">
+            <summary>
+            Stos procesora
+            </summary>
+        </member>
+        <member name="F:Architektura_systemu.MainWindow.memory">
+            <summary>
+            Pamieć procesora
+            </summary>
+        </member>
+        <member name="F:Architektura_systemu.MainWindow.sp">
+            <summary>
+            Wartość wierzchołka stosu
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_change_1(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 1 event of the CheckBox_change control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ustawia losowe wartości w rejestrach
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Button_Click_zero(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zeruje wartości w rejestrach
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Button_Click_mov_xchg(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the xchg event of the Button_Click_mov control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_1(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 1 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_2(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 2 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_3(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 3 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_4(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 4 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_5(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 5 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_6(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 6 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_7(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 7 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_8(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 8 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_9(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 9 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Index_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Chowa obramowanie i wybór zapisu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_10(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 10 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_11(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 11 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_12(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 12 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_13(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 13 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_14(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 14 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_15(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 15 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_16(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 16 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_17(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the 17 event of the CheckBox_Checked control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_check(System.String)">
+            <summary>
+            Sprawdza czy dane wejściowe spełniają warunek i zawierają poprawne znaki
+            </summary>
+            <param name="input">string</param>
+            <returns>
+            string
+            </returns>
+            <remarks>
+            Zwraca ciąg 4 znaków jeśli są zgodne z hex lub # jeśli nie
+            </remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_ax_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_ax control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_bx_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_bx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_cx_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_cx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_dx_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_dx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_disp_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_disp control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Count_index(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Zwraca numer indexu
+            </summary>
+            <param name="si">int</param>
+            <param name="di">int</param>
+            <param name="disp">int</param>
+            <param name="bp">int</param>
+            <param name="bx">int</param>
+            <returns>
+            int
+            </returns>
+            <remarks>
+            Zwraca sume odpowiednich rejestrów tworzących numer indexu do pamięci
+            </remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Lenght_test(System.Int32)">
+            <summary>
+            Sprawdza czy nie przekracza zakresu tablicy
+            </summary>
+            <param name="index">int</param>
+            <returns>
+            int
+            </returns>
+            <exception cref="T:System.ArgumentException">Kiedy przekroczymy tablice 'memory' [65536]</exception>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Mov_mem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the Mov_mem control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Xchg_mem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the Xchg_mem control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_si_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_si control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_di_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_di control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_bp_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the Input_bp control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_memory(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            umieszcza dane do tablicy(memory)
+            </summary>
+            <param name="index_num">int</param>
+            <param name="ax">string</param>
+            <param name="bx">string</param>
+            <param name="cx">string</param>
+            <param name="dx">string</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Output_memory(System.Int32)">
+            <summary>
+            Wyszukuje z pamieci zawartośc i wyswietla w rejestrach
+            </summary>
+            <param name="index_num">int</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Push_ax_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the Push_ax control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.push_bx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the push_bx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.push_cx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the push_cx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.push_dx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the push_dx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.pop_ax_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the pop_ax control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.pop_bx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the pop_bx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.pop_cx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the pop_cx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.pop_dx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Click event of the pop_dx control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Sp_update">
+            <summary>
+            Odświeża sp_output
+            </summary>
+            <remarks>
+            Zamienia sp na Hex i zależnie od długości dodaje zera do łącznej długości 4
+            </remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
