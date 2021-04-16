@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Architektura_systemu</name>
+    </assembly>
+    <members>
+        <member name="T:Architektura_systemu.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Architektura_systemu.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Architektura_systemu.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="F:Architektura_systemu.MainWindow.My_stack">
+            <summary>
+            Stos procesora
+            </summary>
+        </member>
+        <member name="F:Architektura_systemu.MainWindow.memory">
+            <summary>
+            Pamieć procesora
+            </summary>
+        </member>
+        <member name="F:Architektura_systemu.MainWindow.sp">
+            <summary>
+            Wartość wierzchołka stosu
+            </summary>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_change_1(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zachowuje spójność zaznaczeń checkboxów (mov,xcheg)
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ustawia losowe wartości w rejestrach
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Button_Click_zero(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zeruje wartości w rejestrach
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Button_Click_mov_xchg(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Przycisku Mov i Xchg miedzy rejestrami.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_1(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zachowuje spójność zaznaczeń checkboxów reg
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_2(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zachowuje spójność zaznaczeń checkboxów memory
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_3(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zachowuje spójność obramowań i ich zawartości zależnie od wybranego checkboxa(index)
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_4(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zachowuje spójność obramowań i ich zawartości zależnie od wybranego checkboxa(based)
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_5(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zachowuje spójność obramowań i ich zawartości zależnie od wybranego checkboxa(index_based)
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_6(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_7(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_8(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_9(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Index_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Chowa obramowanie i wybór zapisu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_10(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_11(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_12(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_13(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_14(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_15(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_16(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.CheckBox_Checked_17(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Spójność checkboxu
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_check(System.String)">
+            <summary>
+            Sprawdza czy dane wejściowe spełniają warunek i zawierają poprawne znaki
+            </summary>
+            <param name="input">string od użytkowainka</param>
+            <returns>
+            string || input lub # - > true/false
+            </returns>
+            <remarks>
+            Zwraca ciąg 4 znaków jeśli są zgodne z hex lub # jeśli nie
+            </remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_ax_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_bx_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_cx_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_dx_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_disp_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Count_index(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Zwraca wartość indexu
+            </summary>
+            <param name="si">int si_output</param>
+            <param name="di">int di_output</param>
+            <param name="disp">int disp_output</param>
+            <param name="bp">int bp_output</param>
+            <param name="bx">int bx_output</param>
+            <returns>
+            int |+/-| ->  true/false
+            </returns>
+            <remarks>
+            Zwraca sume odpowiednich rejestrów tworzących numer indexu do pamięci chyba że brakuje zaznaczonych checkboxu wtedy zwraca -1
+            </remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Lenght_test(System.Int32)">
+            <summary>
+            Sprawdza czy nie przekracza zakresu tablicy
+            </summary>
+            <param name="index">int</param>
+            <returns>
+            int dodatni 
+            </returns>
+            <exception cref="T:System.ArgumentException">Kiedy przekroczymy tablice 'memory' [65536]</exception>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Mov_mem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku Mov |rejestry - pamięć|
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Xchg_mem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku Xchg |rejestry - pamięć|
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_si_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru. Input_si control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_di_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru. Input_di control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_bp_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Obsługa inputa rejestru. Input_bp control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Input_memory(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Umieszcza dane do tablicy(memory)
+            </summary>
+            <param name="index_num"> dodatni int</param>
+            <param name="ax">string opcjonalny</param>
+            <param name="bx">string opcjonalny</param>
+            <param name="cx">string opcjonalny</param>
+            <param name="dx">string opcjonalny</param>
+            <remarks> Jeśli zmienia argumenty opcjonalne to obsługuje Xchg w przeciwnym razie Mov</remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Output_memory(System.Int32)">
+            <summary>
+            Wyszukuje z pamieci zawartośc i wyswietla w rejestrach
+            </summary>
+            <param name="index_num"> dodatni int</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Push_ax_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Push_ax.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Push_bx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Push_bx.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Push_cx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Push_cx.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Push_dx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Push_dx.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Pop_ax_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Pop_ax.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Pop_bx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Pop_bx.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Pop_cx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Pop_cx.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Pop_dx_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa Pop_dx.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.Sp_update">
+            <summary>
+            Odświeża sp_output
+            </summary>
+            <remarks>
+            Zamienia sp na Hex i zależnie od długości dodaje zera do łącznej długości 4
+            </remarks>
+        </member>
+        <member name="M:Architektura_systemu.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
